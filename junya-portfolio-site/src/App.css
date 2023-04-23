@@ -1,38 +1,91 @@
 .App {
+  background-color: aqua;
+  height: 100vh;
+  max-width: 100vw;
+}
+
+.navBar{
+  background-color: black;
+  color: antiquewhite;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+  min-height: 20vh;
+}
+
+.navBarLinks > ul {
+  font-size:  large;
+  margin-right: 100px;
+  list-style: none;
+  display: flex;
+  gap: 5rem;
+  text-decoration: none;
+}
+
+.navBarLinks > ul :hover {
+  text-decoration: underline; 
+}
+
+.content {
+  background-color: yellow;
+  min-height: 75vh;
+}
+
+.footer {
+  background-color: aquamarine;
+  min-height: 5vh;
+}
+
+.logo > img {
+  max-height: 150px;
+  padding: 10px;
+  margin: 10px
+}
+
+h1, h3 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.shortProfile, .skills, .clientTestimonials {
+  min-height: 50vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.shortProfile {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 10px
 }
 
-.App-link {
-  color: #61dafb;
+.profilePicContainer, .profileInfo {
+  width: 100%;
+  height:70vh;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profilePicture {
+  width: 100%;
+  margin: 30px;
+  min-height: 200px;
+  min-width: 300px;;
+}
+
+.profileInfo {
+  padding: 30px;
+  margin: 50px;
+}
+.skillsContainer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  text-align: center;
+  flex-grow: 1;
+}
+.skill {
+  border: solid black;
+  padding: 20px;
+  margin: 10px;
+  width:25%;
 }
